@@ -8,7 +8,6 @@ This plugin provides a simple example demonstrating how Cordova plugins work.
     
 Install the plugin
 
-    $ cd hello
     $ cordova plugin add https://github.com/shankar667/cordova-plugin-ultimate.git
     
 
