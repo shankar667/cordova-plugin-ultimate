@@ -5,10 +5,6 @@ Simple plugin that returns your string prefixed with ultimate.
 This plugin provides a simple example demonstrating how Cordova plugins work.
 
 ## Using
-
-Create a new Cordova Project
-
-    $ cordova create hello com.example.helloapp Hello
     
 Install the plugin
 
