@@ -5,9 +5,6 @@ Simple plugin that returns your string prefixed with ultimate.
 This plugin provides a simple example demonstrating how Cordova plugins work.
 
 ## Using
-Clone the plugin
-
-    $ git clone https://github.com/shankar667/cordova-plugin-ultimate.git
 
 Create a new Cordova Project
 
@@ -16,7 +13,7 @@ Create a new Cordova Project
 Install the plugin
 
     $ cd hello
-    $ cordova plugin add ../cordova-plugin-ultimate
+    $ cordova plugin add https://github.com/shankar667/cordova-plugin-ultimate.git
     
 
 Edit `www/js/index.js` and add the following code inside `onDeviceReady`
