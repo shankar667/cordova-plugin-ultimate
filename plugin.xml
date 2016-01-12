@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.shankar.ultimate"
+        version="0.1.0">
+
+  <name>Ultimate</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.1"/>
+  </engines>
+
+  <asset src="www/ultimate.js" target="js/ultimate.js"/>
+
+  <js-module src="www/ultimate.js" name="ultimate">
+    <clobbers target="ultimate" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="Ultimate">
+        <param name="android-package" value="com.shankar.plugin.Ultimate"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/Ultimate.java" target-dir="src/com/shankar/plugin/"/>
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Ultimate">
+        <param name="ios-package" value="Ultimate" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/Ultimate.h" target-dir="UltimatePlugin"/>
+    <source-file src="src/ios/Ultimate.m" target-dir="UltimatePlugin"/>
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/Ultimate.cs"/>
+  </platform>
+
+</plugin>
